@@ -240,6 +240,18 @@ int main()
             debugCooldown = 2;
         }
 
+        if (debugCooldown == 0 && sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LBracket))
+        {
+            gameSession.StartServer("192.168.1.254", 53000); // Local IP
+            debugCooldown = 2;
+        }
+
+        if (debugCooldown == 0 && sf::Keyboard::isKeyPressed(sf::Keyboard::Key::RBracket))
+        {
+            gameSession.ConnectToServer("192.168.1.254", 53000); // Local IP
+            debugCooldown = 2;
+        }
+
         window.setMouseCursorVisible(false);
         sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
         keybinds.cursor.setPosition(static_cast<float>(mousePosition.x - 10), static_cast<float>(mousePosition.y));

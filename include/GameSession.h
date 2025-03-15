@@ -11,6 +11,12 @@ class GameSession
 {
   public:
     bool isServerReadyToAcceptPlayers = true;
+    sf::TcpListener listener;
+    std::vector<sf::TcpSocket*> clients;
+    bool isServerRunning;
+
+
+
     GameSession(int maxPlayers);
     ~GameSession();
 
@@ -27,6 +33,11 @@ class GameSession
     void StartRound();
     void EndRound();
 
+    void StartServer(const sf::IpAddress& ip, unsigned short port);
+
+    void ConnectToServer(const sf::IpAddress& ip, unsigned short port);
+
+
     // Network methods
     void SendToClients(sf::Packet& packet);
     void ReceiveFromClients(sf::Packet& packet);
@@ -36,7 +47,6 @@ class GameSession
     int currentPlayerCount;
     std::vector<std::shared_ptr<Player>> players;
     std::vector<std::shared_ptr<daltonyx::Object>> objects; // Objects container
-    std::vector<sf::TcpSocket*> clients;                    // For managing client connections
     sf::Clock roundClock;
     bool isRoundActive;
 

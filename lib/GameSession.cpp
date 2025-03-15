@@ -221,3 +221,48 @@ std::string GameSession::GenerateUUID()
 
     return uuid.str();
 }
+
+void GameSession::StartServer(const sf::IpAddress& ip, unsigned short port)
+{
+    // Initialize the server (listener)
+    listener.setBlocking(false); // Make sure it doesn't block while waiting for connections
+    if (listener.listen(port) != sf::Socket::Done)
+    {
+        std::cerr << "Error starting server on port " << port << std::endl;
+        return;
+    }
+
+    std::cout << "Server started, listening for connections..." << std::endl;
+
+    // Accept new players
+    while (isServerRunning)
+    {
+        sf::TcpSocket* newClient = new sf::TcpSocket;
+        if (listener.accept(*newClient) == sf::Socket::Done)
+        {
+            // Successfully connected, add player and initialize their connection
+            std::shared_ptr<Player> newPlayer = std::make_shared<Player>();
+            AddPlayer(newPlayer, newClient->getRemoteAddress(), newClient->getRemotePort());
+        }
+        else
+        {
+            delete newClient; // Connection attempt failed
+        }
+    }
+}
+
+void GameSession::ConnectToServer(const sf::IpAddress& ip, unsigned short port)
+{
+    sf::TcpSocket socket;
+    if (socket.connect(ip, port) == sf::Socket::Done)
+    {
+        std::cout << "Successfully connected to the server!" << std::endl;
+
+        // Send some initial connection data or start game logic
+        // For example, you might send a "join request" packet
+    }
+    else
+    {
+        std::cerr << "Error connecting to server." << std::endl;
+    }
+}
