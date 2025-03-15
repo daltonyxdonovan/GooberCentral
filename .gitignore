@@ -1,0 +1,65 @@
+# Build artifacts
+/build/
+/x64/
+/bin/
+/obj/
+/out/
+/CMakeFiles/
+/CMakeCache.txt
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+*.exp
+*.pdb
+*.idb
+
+# Visual Studio files
+*.vcxproj*
+*.sln
+*.suo
+*.user
+*.ncb
+*.aps
+*.cache
+*.ilk
+*.log
+*.ipch
+*.tlog
+*.rsuser
+*.sdf
+
+# CMake generated files
+/CMakeLists.txt.user
+/.vs/
+compile_commands.json
+
+# Boost-related files
+/boost/
+/boost-build/
+/boost_*/
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+*.swo
+*.bak
+*.~*
+
+# Dependency management
+/vcpkg_installed/
+/vcpkg/
+
+# Ignore executable binaries
+*.exe
+*.app
+*.out
+*.pyc
+*.class
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+*.code-workspace

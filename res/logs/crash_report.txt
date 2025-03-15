@@ -1,0 +1,56 @@
+Oh no! Application crashed due to: Segmentation Fault
+
+
+==== STACK TRACE ====
+1. CrashHandler::GenerateStackTrace
+   File: C:\Users\dalto\source\repos\GooberCentral\lib\CrashHandler.cpp
+   Line: 68
+   Address: 0x7ff6378a4f70
+
+2. CrashHandler::SignalHandler
+   File: C:\Users\dalto\source\repos\GooberCentral\lib\CrashHandler.cpp
+   Line: 21
+   Address: 0x7ff6378a4c30
+
+3. seh_filter_exe
+   Address: 0x7ff81b2ee8d0
+
+4. `__scrt_common_main_seh'::`1'::filt$0
+   File: D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl
+   Line: 130
+   Address: 0x7ff6379b5e65
+
+5. _C_specific_handler
+   Address: 0x7ff802b6e720
+
+6. _chkstk
+   Address: 0x7ff81d943e90
+
+7. RtlWow64GetCurrentCpuArea
+   Address: 0x7ff81d7f30e0
+
+8. KiUserExceptionDispatcher
+   Address: 0x7ff81d943840
+
+9. daltonyx::Menu::UpdateGameButtons
+   File: C:\Users\dalto\source\repos\GooberCentral\lib\Menu.cpp
+   Line: 2e
+   Address: 0x7ff6378bd480
+
+a. main
+   File: C:\Users\dalto\source\repos\GooberCentral\Source.cpp
+   Line: bd
+   Address: 0x7ff6378cd930
+
+b. __scrt_common_main_seh
+   File: D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl
+   Line: 120
+   Address: 0x7ff6379aeabc
+
+c. BaseThreadInitThunk
+   Address: 0x7ff81bbee8c0
+
+d. RtlUserThreadStart
+   Address: 0x7ff81d89bf40
+
+==== END OF REPORT ====

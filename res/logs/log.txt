@@ -1,0 +1,59 @@
+[06:16:52.243][INFO]::        CrashHandler has been initialised
+
+[06:16:52.244][INFO]::        ====================== INITIALIZING ENGINE ======================
+
+[06:16:52.244][INFO]::        SoundManager Created
+[06:16:52.244][INFO]::        Loading Sounds
+[06:16:52.282][INFO]::        Loading: RES/sounds\bee1.wav
+[06:16:52.284][INFO]::        Loading: RES/sounds\bee2.wav
+[06:16:52.285][INFO]::        Loading: RES/sounds\bee3.wav
+[06:16:52.304][INFO]::        Loading: RES/sounds\bells.wav
+[06:16:52.304][INFO]::        Loading: RES/sounds\birb1.wav
+[06:16:52.306][INFO]::        Loading: RES/sounds\birb2.wav
+[06:16:52.307][INFO]::        Loading: RES/sounds\birb3.wav
+[06:16:52.307][INFO]::        Loading: RES/sounds\boss.wav
+[06:16:52.310][INFO]::        Loading: RES/sounds\coins.wav
+[06:16:52.311][INFO]::        Loading: RES/sounds\dingDown.wav
+[06:16:52.312][INFO]::        Loading: RES/sounds\dingUp.wav
+[06:16:52.313][INFO]::        Loading: RES/sounds\ghost1.wav
+[06:16:52.313][INFO]::        Loading: RES/sounds\ghost2.wav
+[06:16:52.315][INFO]::        Loading: RES/sounds\ghost3.wav
+[06:16:52.317][INFO]::        Loading: RES/sounds\hammering.wav
+[06:16:52.317][INFO]::        Loading: RES/sounds\hitHurt.wav
+[06:16:52.317][INFO]::        Loading: RES/sounds\hittingGrass.wav
+[06:16:52.319][INFO]::        Loading: RES/sounds\imp1.wav
+[06:16:52.320][INFO]::        Loading: RES/sounds\imp2.wav
+[06:16:52.322][INFO]::        Loading: RES/sounds\imp3.wav
+[06:16:52.322][INFO]::        Loading: RES/sounds\itemPop1.wav
+[06:16:52.323][INFO]::        Loading: RES/sounds\itemPop2.wav
+[06:16:52.323][INFO]::        Loading: RES/sounds\itemPop3.wav
+[06:16:52.324][INFO]::        Loading: RES/sounds\machinist.wav
+[06:16:52.325][INFO]::        Loading: RES/sounds\merchant.wav
+[06:16:52.326][INFO]::        Loading: RES/sounds\miner.wav
+[06:16:52.326][INFO]::        Loading: RES/sounds\pickaxeStrikingRock.wav
+[06:16:52.327][INFO]::        Loading: RES/sounds\pickupCoin.wav
+[06:16:52.329][INFO]::        Loading: RES/sounds\questComplete.wav
+[06:16:52.330][INFO]::        Loading: RES/sounds\scurry.wav
+[06:16:52.330][INFO]::        Loading: RES/sounds\select.wav
+[06:16:52.331][INFO]::        Loading: RES/sounds\selectHigh.wav
+[06:16:52.331][INFO]::        Loading: RES/sounds\selectLow.wav
+[06:16:52.332][INFO]::        Loading: RES/sounds\shall1.wav
+[06:16:52.333][INFO]::        Loading: RES/sounds\shall2.wav
+[06:16:52.334][INFO]::        Loading: RES/sounds\shall3.wav
+[06:16:52.335][INFO]::        Loading: RES/sounds\steppingOnGrass.wav
+[06:16:52.336][INFO]::        Loading: RES/sounds\textboxPing.wav
+[06:16:52.336][INFO]::        Loading: RES/sounds\thudDefault.wav
+[06:16:52.336][INFO]::        Loaded 39 Sounds!
+
+[06:16:52.336][INFO]::        Loading Music
+[06:16:52.337][INFO]::        Loading: RES/music\grassSong.ogg
+[06:16:52.338][INFO]::        Loading: RES/music\hellSong.ogg
+[06:16:52.340][INFO]::        Loading: RES/music\sandSong.ogg
+[06:16:52.341][INFO]::        Loading: RES/music\snowSong.ogg
+[06:16:52.342][INFO]::        Loading: RES/music\soulSong.ogg
+[06:16:52.343][INFO]::        Loading: RES/music\titleSong.ogg
+[06:16:52.343][INFO]::        Loaded 6 Musics!
+
+[06:16:52.429][INFO]::        ================= ENGINE STARTED SUCCESSFULLY ===================
+
+[06:16:57.186][ERROR]::        SoundManager Deleted
